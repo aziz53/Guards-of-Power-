@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?><project name="Gaurd of Power " company="" webLink="http://" view-date="2017-05-22" view-index="2" gantt-divider-location="336" resource-divider-location="300" version="2.7.2" locale="en_US">
+    <description><![CDATA[Tower Defence Game 
+Developed by: Ali Meshkat, Aziz Safri ]]></description>
+    <view zooming-state="default:0" id="gantt-chart">
+        <field id="tpd3" name="Name" width="55" order="0"/>
+        <field id="tpd4" name="Begin date" width="22" order="1"/>
+        <field id="tpd5" name="End date" width="21" order="2"/>
+        <timeline><![CDATA[0]]></timeline>
+        <option id="color.recent"><![CDATA[#ff0000 #ffff00 #f4f4f4 #00ccff]]></option>
+    </view>
+    <view id="resource-table">
+        <field id="0" name="Name" width="50" order="0"/>
+        <field id="1" name="Default role" width="50" order="1"/>
+    </view>
+    <!-- -->
+    <calendars base-id="none">
+        <day-types>
+            <day-type id="0"/>
+            <day-type id="1"/>
+            <default-week id="1" name="default" sun="1" mon="0" tue="0" wed="0" thu="0" fri="0" sat="1"/>
+            <only-show-weekends value="true"/>
+            <overriden-day-types/>
+            <days/>
+        </day-types>
+    </calendars>
+    <tasks empty-milestones="true">
+        <taskproperties>
+            <taskproperty id="tpd0" name="type" type="default" valuetype="icon"/>
+            <taskproperty id="tpd1" name="priority" type="default" valuetype="icon"/>
+            <taskproperty id="tpd2" name="info" type="default" valuetype="icon"/>
+            <taskproperty id="tpd3" name="name" type="default" valuetype="text"/>
+            <taskproperty id="tpd4" name="begindate" type="default" valuetype="date"/>
+            <taskproperty id="tpd5" name="enddate" type="default" valuetype="date"/>
+            <taskproperty id="tpd6" name="duration" type="default" valuetype="int"/>
+            <taskproperty id="tpd7" name="completion" type="default" valuetype="int"/>
+            <taskproperty id="tpd8" name="coordinator" type="default" valuetype="text"/>
+            <taskproperty id="tpd9" name="predecessorsr" type="default" valuetype="text"/>
+        </taskproperties>
+        <task id="0" name="Pseudocode" color="#ff0000" meeting="false" start="2017-05-22" duration="2" complete="0" priority="2" expand="true">
+            <depend id="3" type="2" difference="0" hardness="Strong"/>
+            <depend id="7" type="2" difference="0" hardness="Strong"/>
+            <depend id="25" type="2" difference="0" hardness="Strong"/>
+            <depend id="45" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="3" name="Graphical componenets" color="#ffff00" meeting="false" start="2017-05-24" duration="3" complete="0" expand="false">
+            <notes><![CDATA[indludes jFrames, panels, buttons, imports, file readings 
+excludes creating of sprites and photoshop 
+ all 5 windows must be ready and the transition between them with buttons must function
+the health and money diplays must be ready but commented out since there will be no variables yet
+
+intro -> how to play (and back)\
+intro -> credits (and back)
+intro -> mission selection (and back)
+mission selection -> game map 
+game map -> intro 
+
+
+tower placing, upgrade, wave start, ... buttons must have their empty button listeners ready to be coded later]]></notes>
+            <depend id="116" type="2" difference="0" hardness="Strong"/>
+            <task id="25" name="Creation of all 5 windows + panels" color="#ffff00" meeting="false" start="2017-05-24" duration="2" complete="0" expand="true">
+                <notes><![CDATA[windows and panels ]]></notes>
+                <depend id="33" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="33" name="Buttons/labels" color="#ffff00" meeting="false" start="2017-05-26" duration="1" complete="0" expand="true">
+                <notes><![CDATA[only the making of them with empty event listeners ]]></notes>
+            </task>
+        </task>
+        <task id="7" name="Classes(objects) and interfaces" color="#8cb6ce" meeting="false" start="2017-05-24" duration="3" complete="0" expand="false">
+            <notes><![CDATA[indludes abstract classes and their extentions for enemies and towers 
+abstract methods and their overrides 
+getters and setters 
+encapculation ]]></notes>
+            <depend id="55" type="2" difference="0" hardness="Strong"/>
+            <task id="45" name="Abstract classes + methods" color="#8cb6ce" meeting="false" start="2017-05-24" duration="1" complete="0" expand="true">
+                <notes><![CDATA[enemy and tower  ]]></notes>
+                <depend id="49" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="49" name="Extentions and overrides + interfaces" color="#8cb6ce" meeting="false" start="2017-05-25" duration="2" complete="0" expand="true">
+                <notes><![CDATA[includes the collision triangles ]]></notes>
+                <depend id="55" type="2" difference="0" hardness="Strong"/>
+                <depend id="125" type="2" difference="0" hardness="Strong"/>
+                <depend id="127" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="132" name="Finding temparory sprites for testing" color="#8cb6ce" meeting="false" start="2017-05-26" duration="1" complete="0" expand="true">
+                <notes><![CDATA[Any sprites for all enemies and towers to be used during the weekend for the testing
+Includes background(tiles) as well]]></notes>
+            </task>
+        </task>
+        <task id="116" name="Creation of Sprites" color="#ffff00" meeting="false" start="2017-05-27" duration="2" complete="0" expand="true">
+            <depend id="152" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="55" name="Put parts together + prepare for testing" color="#8cb6ce" meeting="false" start="2017-05-27" duration="2" complete="0" expand="true">
+            <notes><![CDATA[putting the two parts together
+creation of text files of all maps]]></notes>
+            <depend id="143" type="2" difference="0" hardness="Strong"/>
+            <task id="125" name="Creating text files for maps" color="#8cb6ce" meeting="false" start="2017-05-27" duration="1" complete="0" expand="true">
+                <depend id="134" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="127" name="Defining paths for Enemies" color="#8cb6ce" meeting="false" start="2017-05-27" duration="2" complete="0" expand="true">
+                <depend id="143" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="87" name="Start of Coding the Game play" color="#ff0000" meeting="true" start="2017-05-28" duration="0" complete="0" expand="true">
+            <notes><![CDATA[End of setUps 
+]]></notes>
+        </task>
+        <task id="134" name="Start Movement" color="#8cb6ce" meeting="false" start="2017-05-28" duration="1" complete="0" expand="true">
+            <notes><![CDATA[putting the files together and coding the movement fuction 
+testing the movement method ]]></notes>
+            <depend id="143" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="143" name="Finish Movement + Check" color="#8cb6ce" meeting="false" start="2017-05-29" duration="1" complete="0" expand="true">
+            <notes><![CDATA[Finish the movement method 
+and fix any bugs for all three maps]]></notes>
+            <depend id="171" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="152" name="Upgrage Menu" color="#ffff00" meeting="false" start="2017-05-29" duration="2" complete="0" expand="false">
+            <notes><![CDATA[selectedTowerGet
+selectTower 
+static towerInfo(){}
+   Displaying info(upgrade price, sell price)
+   Displaying the range of selected tower on map
+
+
+
+add on: a bright lining around the tower showing it is selected ]]></notes>
+            <depend id="177" type="2" difference="0" hardness="Strong"/>
+            <task id="159" name="selectedTowerGet" color="#ffff00" meeting="false" start="2017-05-29" duration="1" complete="0" expand="true">
+                <notes><![CDATA[selectedTowerGet
+selectTower  
+(find in Pseudocode)]]></notes>
+                <depend id="161" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="161" name="towerInfo" color="#ffff00" meeting="false" start="2017-05-30" duration="1" complete="0" expand="true">
+                <notes><![CDATA[static towerInfo(){}
+   Displaying the buttons when a tower is selected 
+   Displaying info(upgrade price, sell price)
+   Displaying the range of selected tower on map
+
+includes with working sell and upgrade buttons
+
+add-ons: 
+   displaying of other info eg. Damage, attack speed
+   bright line thing around selected tower ]]></notes>
+                <depend id="177" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="171" name="Towers Menu" color="#8cb6ce" meeting="false" start="2017-05-30" duration="2" complete="0" expand="true">
+            <notes><![CDATA[Tower Place function
+
+when clicked on the chosen tower display tower at the position of cursor and wait for another click to place tower anywhere on the map as long as the rectangle doesnt intersect and enough money  ]]></notes>
+            <depend id="237" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="177" name="Method Shoot + Animation" color="#ffff00" meeting="false" start="2017-05-31" duration="3" complete="0" expand="false">
+            <notes><![CDATA[includes the use of the 8 sprites of each tower to display the tower shooting 
+graphics of the bullet moving towards the enemy for different towers 
+graphics of mud tower 
+finding the target ]]></notes>
+            <depend id="228" type="2" difference="0" hardness="Strong"/>
+            <task id="182" name="Target search + Mc" color="#ffff00" meeting="false" start="2017-05-31" duration="1" complete="0" expand="true">
+                <depend id="184" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="184" name="Mc + Rl" color="#ffff00" meeting="false" start="2017-06-01" duration="1" complete="0" expand="true">
+                <depend id="185" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="185" name="Mc + Mo + Rotations" color="#ffff00" meeting="false" start="2017-06-02" duration="1" complete="0" expand="true">
+                <depend id="228" type="2" difference="0" hardness="Strong"/>
+            </task>
+        </task>
+        <task id="199" name="Hard Codings" color="#8cb6ce" meeting="false" start="2017-06-01" duration="4" complete="0" expand="true">
+            <notes><![CDATA[Check enemy movements 
+tower placings 
+]]></notes>
+            <task id="237" name="Tower stats" color="#8cb6ce" meeting="false" start="2017-06-01" duration="1" complete="0" expand="true">
+                <depend id="225" type="2" difference="0" hardness="Strong"/>
+            </task>
+            <task id="225" name="Waves of Enemies" color="#000000" meeting="false" start="2017-06-02" duration="3" complete="0" expand="true">
+                <notes><![CDATA[determines the number of each enemt being spawned 
+and each ones health that will increace every round
+]]></notes>
+                <task id="230" name="Number of each" color="#8cb6ce" meeting="false" start="2017-06-02" duration="2" complete="0" expand="true">
+                    <depend id="232" type="2" difference="0" hardness="Strong"/>
+                </task>
+                <task id="232" name="Healths" color="#8cb6ce" meeting="false" start="2017-06-04" duration="1" complete="0" expand="true">
+                    <depend id="234" type="2" difference="0" hardness="Strong"/>
+                </task>
+            </task>
+        </task>
+        <task id="228" name="Background Graphics" color="#ffff00" meeting="false" start="2017-06-03" duration="2" complete="0" expand="true">
+            <notes><![CDATA[All but the main game and mission selection will be on imported pictues 
+main game has different textures and pics on the different panels(towers, upgrade, health)]]></notes>
+            <depend id="234" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="234" name="Put Everything Together" color="#ff0000" meeting="false" start="2017-06-05" duration="3" complete="0" priority="2" expand="true">
+            <notes><![CDATA[Bug fixes 
+making the program work 
+add anthing missing to the program]]></notes>
+            <depend id="229" type="2" difference="0" hardness="Strong"/>
+            <depend id="248" type="2" difference="0" hardness="Strong"/>
+            <depend id="249" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="248" name="Program fully working" color="#ff0000" meeting="true" start="2017-06-08" duration="0" complete="0" expand="true"/>
+        <task id="229" name="Balancing the game" color="#8cb6ce" meeting="false" start="2017-06-08" duration="2" complete="0" expand="true">
+            <notes><![CDATA[Add required things if missing ]]></notes>
+            <depend id="250" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="249" name="Extra features" color="#ffff00" meeting="false" start="2017-06-08" duration="2" complete="0" expand="true">
+            <notes><![CDATA[Add ons that are not added if program is funstioning perfectly
+if not work on program + bug fix
+
+
+
+music ]]></notes>
+            <depend id="250" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="250" name="Thorough Check" color="#ff0000" meeting="false" start="2017-06-10" duration="2" complete="0" priority="2" expand="true">
+            <notes><![CDATA[bug fixings or adding new things 
+make sure commenting is complete ]]></notes>
+            <depend id="263" type="2" difference="0" hardness="Strong"/>
+        </task>
+        <task id="263" name="PROGRAM FINISHED" color="#ff0000" meeting="true" start="2017-06-12" duration="0" complete="0" expand="true"/>
+    </tasks>
+    <resources>
+        <resource id="0" name="Ali Meshkat " function="SoftwareDevelopment:2" contacts="seyedali.meshkat@gmail.com" phone=""/>
+        <resource id="1" name="Aziz Safri" function="SoftwareDevelopment:2" contacts="Azizsafri13@gmail.com" phone=""/>
+    </resources>
+    <allocations>
+        <allocation task-id="0" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="7" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="0.0"/>
+        <allocation task-id="55" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="0.0"/>
+        <allocation task-id="134" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="50.0"/>
+        <allocation task-id="125" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="50.0"/>
+        <allocation task-id="127" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="50.0"/>
+        <allocation task-id="143" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="45" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="49" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="132" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="0.0"/>
+        <allocation task-id="171" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="232" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="237" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="230" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="234" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="229" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="250" resource-id="0" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="0" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="3" resource-id="1" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="116" resource-id="1" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="152" resource-id="1" function="SoftwareDevelopment:2" responsible="true" load="0.0"/>
+        <allocation task-id="159" resource-id="1" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="161" resource-id="1" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="177" resource-id="1" function="SoftwareDevelopment:2" responsible="true" load="0.0"/>
+        <allocation task-id="182" resource-id="1" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="184" resource-id="1" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="185" resource-id="1" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="228" resource-id="1" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="234" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+        <allocation task-id="249" resource-id="1" function="SoftwareDevelopment:2" responsible="true" load="100.0"/>
+        <allocation task-id="250" resource-id="1" function="SoftwareDevelopment:2" responsible="false" load="100.0"/>
+    </allocations>
+    <vacations/>
+    <taskdisplaycolumns>
+        <displaycolumn property-id="tpd2" order="-1" width="75" visible="false"/>
+        <displaycolumn property-id="tpd6" order="-1" width="75" visible="false"/>
+        <displaycolumn property-id="tpd3" order="0" width="185" visible="true"/>
+        <displaycolumn property-id="tpd4" order="1" width="74" visible="true"/>
+        <displaycolumn property-id="tpd7" order="-1" width="75" visible="false"/>
+        <displaycolumn property-id="tpd8" order="-1" width="75" visible="false"/>
+        <displaycolumn property-id="tpd12" order="-1" width="75" visible="false"/>
+        <displaycolumn property-id="tpd5" order="2" width="73" visible="true"/>
+        <displaycolumn property-id="tpd10" order="-1" width="75" visible="false"/>
+        <displaycolumn property-id="tpd11" order="-1" width="75" visible="false"/>
+        <displaycolumn property-id="tpd9" order="-1" width="75" visible="false"/>
+        <displaycolumn property-id="tpd1" order="-1" width="75" visible="false"/>
+        <displaycolumn property-id="tpd13" order="-1" width="75" visible="false"/>
+        <displaycolumn property-id="tpd0" order="-1" width="75" visible="false"/>
+    </taskdisplaycolumns>
+    <previous/>
+    <roles roleset-name="Default"/>
+    <roles roleset-name="SoftwareDevelopment"/>
+</project>
