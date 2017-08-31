@@ -2,4 +2,4 @@
 @authors: Ali Meshkat, Aziz Safri
 Tower defense game 
 Developed using Java
-Only the .java files included
+Only the .java files included(no pics/sounds)
